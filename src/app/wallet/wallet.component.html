@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <style>
+main
+{
+    width:95%;
+    margin:60px auto; 
+    border:1px  black;
+    display:grid;
+    grid-template-rows:200px 200px 50px 50px;
+    grid-template-columns:repeat(2,1fr) 500px ;
+    grid-gap:20px;
+}
+
+
+#investment
+{
+position: relative;
+top: 8px;
+left: 100px;
+width: 72px;
+height: 27px;
+color: #717171;
+text-align: center;
+font: normal normal 600 20px/27px Open Sans;
+letter-spacing: 0px;
+color: #717171;
+opacity: 1;
+
+}
+   
+#savings
+{
+position: relative;
+top: 8px;
+left: 60px;
+width: 72px;
+height: 27px;
+color: #717171;
+text-align: center;
+font: normal normal 600 20px/27px Open Sans;
+letter-spacing: 0px;
+color: #717171;
+opacity: 1;
+}
+
+
+
+
+#overview
+{
+position:relative;
+top: 8px;
+left: 30px;
+width: 95px;
+height: 27px;
+color: #2c2c2c;
+text-align: left;
+font: normal normal bold 20px/27px Open Sans;
+letter-spacing: 0px;
+color: #2C2C2C;
+opacity: 1;
+}
+
+
+#btn1
+{
+position: absolute;
+top: 20px;
+left: 1050px;
+width: 100px;
+height: 35px;
+color: #293879;
+text-align: left;
+font: normal normal 600 20px/27px Open Sans;
+letter-spacing: 0px;
+color: #293879;
+opacity: 1;
+}
+
+.div1
+{
+    
+top: 206px;
+left: 443px;
+width: 344px;
+height: 204px;
+background: #FEFEFE 0% 0% no-repeat padding-box;
+box-shadow: 0px 0px 6px #07070710;
+border: 1px solid #E7E8E9;
+border-radius: 10px;
+opacity: 1;
+    
+}
+
+.div2
+{
+    top: 206px;
+left: 833px;
+width: 344px;
+height: 204px;
+background: #FEFEFE 0% 0% no-repeat padding-box;
+box-shadow: 0px 0px 6px #07070710;
+border: 1px solid #E7E8E9;
+border-radius: 10px;
+opacity: 1;
+}
+
+.div3{
+   
+    grid-column: 3/4;
+    grid-row:1/4;
+}
+
+.div4{
+    background-color: aqua;
+    top: 430px;
+left: 443px;
+width: 344px;
+height: 145px;
+background: #FEFEFE 0% 0% no-repeat padding-box;
+box-shadow: 0px 0px 6px #07070710;
+border: 1px solid #E7E8E9;
+border-radius: 10px;
+opacity: 1;
+}
+
+.div5{
+    top: 430px;
+left: 443px;
+width: 344px;
+height: 145px;
+background: #FEFEFE 0% 0% no-repeat padding-box;
+box-shadow: 0px 0px 6px #07070710;
+border: 1px solid #E7E8E9;
+border-radius: 10px;
+opacity: 1;
+  
+}
+
+.div6{
+   
+    grid-column: 1/3;
+}
+
+
+.balance{
+   
+position: absolute; 
+top: 90px;
+left: 70px;
+color:#2c2c2c;
+text-align: left;
+letter-spacing: NaNpx;
+color: #2C2C2C;
+opacity:1;
+}
+
+.wallet-address
+{
+    position: absolute; 
+top: 90px;
+left: 670px;
+color:#2c2c2c;
+text-align: left;
+font: normal normal 600 18px/24px Open Sans;
+letter-spacing: 0.36px;
+color: #2C2C2C;
+opacity: 1;
+}
+
+/*hr{
+top: 40px;
+left: 20px;
+
+border: 0.5px solid #717171;
+background: transparent linear-gradient(180deg, #FFFFFF 0%, #FEFEFE 100%) 0% 0% no-repeat padding-box;
+border: 0.5px solid #717171;
+opacity: 1;
+}*/
+
+.checking
+{
+position:absolute;
+top: 140px;
+left: 50px;
+
+color: #293879;
+text-align: left;
+font: normal normal 600 18px/24px Open Sans;
+letter-spacing: 0.36px;
+color: #293879;
+opacity: 1;
+}
+
+/*.transfer
+{
+position: relative;
+top: 20px;
+left: 40px;
+
+color: #293879;
+text-align: left;
+font: normal normal 600 18px/24px Open Sans;
+letter-spacing: 0.36px;
+color: #293879;
+opacity: 1;
+}*/
+
+.div1-1{
+top: 206px;
+left: 443px;
+width: 344px;
+height: 51px;
+background: #006fff29 0% 0% no-repeat padding-box;
+background: #006FFF29 0% 0% no-repeat padding-box;
+box-shadow: 0px 0px 6px #07070710;
+border-radius: 10px 10px 0px 0px;
+opacity: 0.4; 
+}
+
+.div2-1
+{
+top: 206px;
+left: 833px;
+width: 344px;
+height: 51px;
+background: #006fff29 0% 0% no-repeat padding-box;
+background: #006FFF29 0% 0% no-repeat padding-box;
+box-shadow: 0px 0px 6px #07070710;
+border-radius: 10px 10px 0px 0px;
+opacity: 0.4;
+}
+
+.div4-1
+{
+    top: 430px;
+left: 443px;
+width: 344px;
+height: 51px;
+background: #006fff29 0% 0% no-repeat padding-box;
+background: #006FFF29 0% 0% no-repeat padding-box;
+box-shadow: 0px 0px 6px #07070710;
+border-radius: 10px 10px 0px 0px;
+opacity: 0.4;
+}
+
+.div5-1
+{
+top: 430px;
+left: 833px;
+width: 344px;
+height: 51px;
+background: #006fff29 0% 0% no-repeat padding-box;
+background: #006FFF29 0% 0% no-repeat padding-box;
+box-shadow: 0px 0px 6px #07070710;
+border-radius: 10px 10px 0px 0px;
+opacity: 0.4;
+}
+
+.cash
+{
+position:relative;
+top: 30px;
+left: 30px;
+
+color: #717171;
+text-align: left;
+font: normal normal normal 17px/23px Open Sans;
+letter-spacing: 0.34px;
+color: #717171;
+opacity: 1;
+}
+
+.paypal
+{
+position: relative;
+top: 30px;
+left: 30px;
+
+color: #717171;
+text-align: left;
+font: normal normal normal 17px/23px Open Sans;
+letter-spacing: 0.34px;
+color: #717171;
+opacity: 1;
+}
+
+span
+{
+
+
+
+font: normal normal normal 17px/23px Open Sans;
+letter-spacing: 0.34px;
+color: #2B2B2B;
+opacity: 1;
+}
+
+.div1-2
+{
+position: absolute;
+top: 260px;
+left: 60px;
+width: 100px;
+height: 40px;
+border: 0.5px solid #717171;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 0.5px solid #717171;
+border-radius: 5px;
+opacity: 1;
+}
+
+.div2-2
+{
+position: absolute;
+top: 260px;
+left:620px;
+width: 100px;
+height: 40px;
+border: 0.5px solid #717171;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 0.5px solid #717171;
+border-radius: 5px;
+opacity: 1;  
+}
+
+.div1-3
+{
+position: absolute;
+top: 3px;
+left: 10px;
+width: 11px;
+height: 27px;
+color: #717171;
+text-align: left;
+font: normal normal 600 20px/27px Open Sans;
+letter-spacing: 0px;
+color: #717171;
+opacity: 1;
+}
+
+.div2-3
+{
+position: absolute;
+top: 3px;
+left: 22px;
+width: 11px;
+height: 27px;
+color: #717171;
+text-align: left;
+font: normal normal 600 20px/27px Open Sans;
+letter-spacing: 0px;
+color: #717171;
+opacity: 1; 
+}
+
+
+
+
+.coin
+{
+position: absolute;
+top: 240px;
+left: 62px;
+width: 83px;
+height: 23px;
+color: #717171;
+text-align: left;
+font: normal normal 600 17px/23px Open Sans;
+letter-spacing: 0.34px;
+color: #717171;
+opacity: 1;
+}
+
+.sell{
+ 
+position: absolute;
+top: 240px;
+left: 620px;
+width: 83px;
+height: 23px;
+color: #717171;
+text-align: left;
+font: normal normal 600 17px/23px Open Sans;
+letter-spacing: 0.34px;
+color: #717171;
+opacity: 1;
+}
+
+.btn1
+{
+    position: absolute;
+top: 260px;
+left:200px;
+width: 110px;
+height: 40px;
+background: #293879 0% 0% no-repeat padding-box;
+background: #293879 0% 0% no-repeat padding-box;
+border-radius: 5px;
+opacity: 1;
+}
+
+.btn2
+{
+position: absolute;
+top: 260px;
+left:750px;
+width: 110px;
+height: 40px;
+background: #293879 0% 0% no-repeat padding-box;
+background: #293879 0% 0% no-repeat padding-box;
+border-radius: 5px;
+opacity: 1;
+}
+
+h4{
+position: relative;
+top: 5px;
+left: 25px;
+width: 33px;
+height: 24px;
+text-align: left;
+font: normal normal 600 18px/24px Open Sans;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+}
+
+
+
+.invested
+{
+position: absolute;
+top: 410px;
+left: 70px;
+width: 70px;
+height: 23px;
+color: #717171;
+text-align: left;
+font: normal normal normal 17px/23px Open Sans;
+letter-spacing: 0.34px;
+color: #717171;
+opacity: 100px;
+}
+
+h5
+{
+position: relative;
+top: 45px;
+left: 30px;
+width: 60px;
+height: 23px;
+color: #717171;
+text-align: left;
+font: normal normal normal 17px/23px Open Sans;
+letter-spacing: 0.34px;
+color: #717171;
+opacity: 1;
+}
+
+.inv{
+position: absolute;
+top: 410px;
+left: 620px;
+width: 70px;
+height: 23px;
+color: #717171;
+text-align: left;
+font: normal normal normal 17px/23px Open Sans;
+letter-spacing: 0.34px;
+color: #717171;
+opacity: 100px;
+}
+
+.contribute{
+    position: absolute;
+top: 460px;
+left: 620px;
+width: 70px;
+height: 23px;
+color: #717171;
+text-align: left;
+font: normal normal normal 17px/23px Open Sans;
+letter-spacing: 0.34px;
+color: #717171;
+opacity: 100px;
+}
+
+.div6-1{
+position: absolute;
+top: 520px;
+left: 50px;
+width: 201px;
+height: 27px;
+color: #2c2c2c;
+text-align: left;
+font: normal normal 600 20px/27px Open Sans;
+letter-spacing: 0.4px;
+color: #2C2C2C;
+opacity: 1;
+
+}
+
+.div6-2
+{
+position: absolute;
+top: 570px;
+left: 100px;
+width: 40px;
+height: 23px;
+color: #717171;
+text-align: left;
+font: normal normal 600 17px/23px Open Sans;
+letter-spacing: 0.34px;
+color: #717171;
+opacity: 1;
+}
+
+.date1{
+position: absolute;
+top: 630px;
+left: 50px;
+width: 105px;
+height: 24px;
+color: #717171;
+text-align: left;
+font: normal normal normal 18px/24px Open Sans;
+letter-spacing: 0px;
+color: #717171;
+opacity: 1;
+}
+
+.date2
+{
+position: absolute;
+top: 680px;
+left: 50px;
+width: 105px;
+height: 24px;
+color: #717171;
+text-align: left;
+font: normal normal normal 18px/24px Open Sans;
+letter-spacing: 0px;
+color: #717171;
+opacity: 1;  
+}
+
+.date3
+{
+position: absolute;
+top: 730px;
+left: 50px;
+width: 105px;
+height: 24px;
+color: #717171;
+text-align: left;
+font: normal normal normal 18px/24px Open Sans;
+letter-spacing: 0px;
+color: #717171;
+opacity: 1;  
+}
+
+.date4
+{
+position: absolute;
+top: 780px;
+left: 50px;
+width: 105px;
+height: 24px;
+color: #717171;
+text-align: left;
+font: normal normal normal 18px/24px Open Sans;
+letter-spacing: 0px;
+color: #717171;
+opacity: 1;  
+}
+
+.date5
+{
+position: absolute;
+top: 830px;
+left: 50px;
+width: 105px;
+height: 24px;
+color: #717171;
+text-align: left;
+font: normal normal normal 18px/24px Open Sans;
+letter-spacing: 0px;
+color: #717171;
+opacity: 1;  
+}
+
+.tr1
+{
+position: absolute;
+top: 630px;
+left: 360px;
+width: 258px;
+height: 24px;
+color: #717171;
+text-align: left;
+font: normal normal normal 18px/24px Open Sans;
+letter-spacing: 0px;
+color: #717171;
+opacity: 1;
+}
+
+.tr2
+{
+position: absolute;
+top: 680px;
+left: 360px;
+width: 258px;
+height: 24px;
+color: #717171;
+text-align: left;
+font: normal normal normal 18px/24px Open Sans;
+letter-spacing: 0px;
+color: #717171;
+opacity: 1;
+}
+
+
+.tr3
+{
+position: absolute;
+top: 730px;
+left: 360px;
+width: 258px;
+height: 24px;
+color: #717171;
+text-align: left;
+font: normal normal normal 18px/24px Open Sans;
+letter-spacing: 0px;
+color: #717171;
+opacity: 1;
+}
+
+.tr4
+{
+position: absolute;
+top: 780px;
+left: 360px;
+width: 258px;
+height: 24px;
+color: #717171;
+text-align: left;
+font: normal normal normal 18px/24px Open Sans;
+letter-spacing: 0px;
+color: #717171;
+opacity: 1;
+}
+
+.tr5
+{
+position: absolute;
+top: 830px;
+left: 360px;
+width: 258px;
+height: 24px;
+color: #717171;
+text-align: left;
+font: normal normal normal 18px/24px Open Sans;
+letter-spacing: 0px;
+color: #717171;
+opacity: 1;
+}
+
+
+.am1
+{
+    position: absolute;
+top: 630px;
+left: 680px;
+width: 56px;
+height: 24px;
+text-align: left;
+font: normal normal 600 18px/24px Open Sans;
+letter-spacing: 0px;
+color: #05CF5B;
+opacity: 1;
+}
+
+
+.am2
+{
+    position: absolute;
+top: 680px;
+left: 680px;
+width: 83px;
+height: 24px;
+color: #717171;
+text-align: left;
+font: normal normal 600 18px/24px Open Sans;
+letter-spacing: 0px;
+color: #717171;
+opacity: 1;
+}
+
+.am3
+{
+position: absolute;
+top: 730px;
+left: 680px;
+width: 56px;
+height: 24px;
+text-align: left;
+font: normal normal 600 18px/24px Open Sans;
+letter-spacing: 0px;
+color: #05CF5B;
+opacity: 1;
+}
+
+.am4
+{
+    position: absolute;
+top: 780px;
+left: 680px;
+width: 56px;
+height: 24px;
+text-align: left;
+font: normal normal 600 18px/24px Open Sans;
+letter-spacing: 0px;
+color:#717171;
+opacity: 1;
+}
+
+.am5
+{
+    position: absolute;
+top: 830px;
+left: 680px;
+width: 56px;
+height: 24px;
+text-align: left;
+font: normal normal 600 18px/24px Open Sans;
+letter-spacing: 0px;
+color:#717171;
+opacity: 1;
+}
+
+.view{
+position: absolute;
+top: 850px;
+left: 680px;
+width: 90px;
+height: 24px;
+color: #293879;
+text-align: center;
+font: normal normal 600 18px/24px Open Sans;
+letter-spacing: 0px;
+color: #293879;
+opacity: 1;
+}
+
+.div3-1{
+position:absolute;
+top: 130px;
+left:1000px;
+width: 400px;
+height:800px;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 0px 40px #6E89FF1A;
+border-radius: 20px;
+opacity: 1;
+}
+
+.div3-2
+{
+position: absolute;
+top: 200px;
+left: 1050px;
+width: 300px;
+height: 200px;
+background: transparent url('/assets/img1.png') 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 6px #2938794D;
+border-radius: 5px;
+opacity: 1;
+}
+
+.div3-3
+{
+position: absolute;
+top: 430px;
+left: 1050px;
+width: 300px;
+height: 200px;
+background: transparent url('/assets/img1.png') 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 6px #2938794D;
+border-radius: 5px;
+opacity: 1;
+}
+
+.div3-4
+{
+position: absolute;
+top: 650px;
+left: 1050px;
+width: 300px;
+height: 200px;
+background: transparent url('/assets/img1.png') 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 6px #2938794D;
+border-radius: 5px;
+opacity: 1;
+}
+
+.seat
+{
+position: relative;
+top: 20px;
+left: 40px;
+width: 161px;
+height: 27px;
+color: #2c2c2c;
+text-align: left;
+font: normal normal 600 20px/27px Open Sans;
+letter-spacing: 0.4px;
+color: #2C2C2C;
+opacity: 1;
+}
+
+.p1
+{
+color: #2c2c2c;
+position: relative;
+top:10px;
+left:10px;
+text-align: left;
+font: normal normal 600 20px/27px Open Sans;
+letter-spacing: 0.4px;
+color: #2C2C2C;
+opacity: 1;
+}
+.p2
+{
+color: #2c2c2c;
+position: relative;
+top:10px;
+left:10px;
+text-align: left;
+font: normal normal 600 20px/27px Open Sans;
+letter-spacing: 0.4px;
+color: #2C2C2C;
+opacity: 1;
+}
+
+.p3
+{
+color: #2c2c2c;
+position: relative;
+top:10px;
+left:10px;
+text-align: left;
+font: normal normal 600 20px/27px Open Sans;
+letter-spacing: 0.4px;
+color: #2C2C2C;
+opacity: 1;
+}
+
+.p1-1
+{
+position: relative;
+top: 30px;
+left: 20px;
+width: 378px;
+height: 49px;
+color:#717171;
+text-align: left;
+font: normal normal normal 17px/23px Open Sans;
+letter-spacing: 0px;
+color: #717171;
+opacity: 1;
+}
+
+.p2-1
+{
+position: relative;
+top: 30px;
+left: 20px;
+width: 378px;
+height: 49px;
+color:#717171;
+text-align: left;
+font: normal normal normal 17px/23px Open Sans;
+letter-spacing: 0px;
+color: #717171;
+opacity: 1;
+}
+
+.p3-1
+{
+position: relative;
+top: 30px;
+left: 20px;
+width: 378px;
+height: 49px;
+color:#717171;
+text-align: left;
+font: normal normal normal 17px/23px Open Sans;
+letter-spacing: 0px;
+color: #717171;
+opacity: 1;
+}
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#" id="overview">Overview</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" id="savings">Savings</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" id="investment">Investments</a>
+    </li>
+    <li class="link1">
+
+    </li>
+  </ul>
+
+  <button type="button" class="btn btn-light" id="btn1">Investor</button>
+</nav>
+<hr>
+
+      
+
+         
+
+
+        <p class="balance">Total Balance  :$60</p>
+        <p class="wallet-address">Wallet Address</p>
+          <main>
+                <div class="div1">
+                    <div class="div1-1">
+                        <p class="checking">Checking</p>
+                    </div>
+                    <p class="cash">Cash&nbsp;&nbsp;&nbsp;&nbsp; :$20.00</p>
+                    <p class="coin">Buy Coins</p>
+                    <div class="div1-2">
+                    <div class="div1-3">0</div> 
+                    </div>
+                    <button class="btn1"><h4>Buy</h4></button>
+                
+                </div>
+
+
+                <div class="div2">
+                        <div class="div2-1">
+                                <p class="transfer">Transfers</p>
+                        </div>
+                        <p class="paypal">Paypal&nbsp;&nbsp;&nbsp;&nbsp;<span class="bank">Bank Account</span></p>
+                       <p class="sell">Sell Coins</p>
+                       <div class="div2-2">
+                        <div class="div2-3">0</div> 
+                            </div>
+                        <button class="btn2"><h4>Sell</h4></button>
+                </div>
+
+
+                <div class="div3">
+                    <div class="div3-1"><p class="seat">Availabel Assets</p></div>
+                    <div class="div3-2">
+                     <p class="p1">Potential Covid-19 Cure:Clinical Trial</p>
+                     <p class="p1-1">Description:A well known,safe generic<br>
+                                                 medication that has been used for<br>
+                                                 decades has shown for..
+                     </p>
+                    </div>
+
+                    <div class="div3-3">
+                    <p class="p2">Mission</p>
+                    <p class="p2-1">Description:Ownership in minuteman is<br>
+                                                decentraliced and dremotically<br>
+                                                across its base of..
+                    </p>
+                    </div>
+
+                    <div class="div3-4">
+                    <p class="p3">20922 Avalon Drive</p>
+                    <p class="p3-1">Address:<br>
+                                          8801 Holly Road<br>
+                                          Tullahoma,TN 37388
+                    </p>
+                    </div>
+                </div>
+
+
+                <div class="div4">
+                        <div class="div4-1">
+                                <p class="savings">Savings</p>
+                        </div>
+                        <p class="invested">Invested&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:$20.00</p>
+                        <h5 class="total">Total Payout&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:$27.00</h5>
+                </div>
+
+
+                <div class="div5">
+                        <div class="div5-1">
+                                <p class="invest">Investments</p>
+                        </div>
+                        <p class="inv">Invested&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:$20.00</p><br>
+                        <p class="contribute">Contributed&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:$27.00</p>
+                </div>
+                  
+                <div class="div6">
+                   
+                    <div class="container-fluid">
+                            <div class="row">
+                                    <div class="col">Date</div>
+                                    <div class="col">Transaction</div>
+                                    <div class="col">Amount</div>
+                            </div>
+                            <hr>
+                            <div class="date1">09 Mar2020</div>
+                            <div class="date2">09 Mar2020</div>
+                            <div class="date3">09 Mar2020</div>
+                            <div class="date4">09 Mar2020</div>
+                            <div class="date5">09 Mar2020</div>
+
+                            <div class="tr1">20922 Avalon Drive(Jon Hed..) -Dividend</div>
+                            <div class="tr2">20922 Avalon Drive(Jon Hed..) -Purchase</div>
+                            <div class="tr3">Freedom Coin -Diposit</div>
+                            <div class="tr4">Freedom Coin -Withdrawl</div>
+                            <div class="tr5">Profit Wolfpack(Alpha Name) -Purchase</div>
+
+
+                            <div class="am1">$10.00</div>
+                            <div class="am2">$1000.00</div>
+                            <div class="am3">$10.00</div>
+                            <div class="am4">-$500.00</div>
+                            <div class="am5">-$400.00</div>
+                    </div>
+                </div>
+
+                <div class="view">
+                   <a href="#">View More</a>
+                </div>
+
+               
+
+               
+          </main>
+
+    
+
+    
+
+                
+
+    
+
+      
+</body>
+</html>
